@@ -26,8 +26,7 @@ public class ParseReceiver extends BroadcastReceiver {
 		try {
 			String action = intent.getAction();
 			String channel = intent.getExtras().getString("com.parse.Channel");
-			JSONObject json = new JSONObject(intent.getExtras().getString(
-					"com.parse.Data"));
+			JSONObject json = new JSONObject(intent.getExtras().getString("com.parse.Data"));
 
 			Log.d(TAG, "got action " + action + " on channel " + channel + " with:");
 			Iterator itr = json.keys();
