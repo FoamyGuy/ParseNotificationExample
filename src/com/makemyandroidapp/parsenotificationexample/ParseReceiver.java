@@ -15,7 +15,17 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
-
+/*****************************
+ * This class will receive custom push notifications
+ * from parse.com. These are different than the "plain"
+ * message push notifications. 
+ * 
+ * There must be an action defined within the Intent-Filter
+ * for this receiver in the manifest.xml file.
+ * 
+ * You can optionally pass JSON data from parse.com which will
+ * be avaialable in the onReceive() method here.
+ *****************************/
 public class ParseReceiver extends BroadcastReceiver {
 	private final String TAG = "Parse Notification";
 	private String msg = "";
