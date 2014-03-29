@@ -21,7 +21,9 @@ import android.util.Log;
  * message push notifications. 
  * 
  * There must be an action defined within the Intent-Filter
- * for this receiver in the manifest.xml file.
+ * for this receiver in the manifest.xml file. And the same
+ * action must be specified on the notification when it is
+ * pushed.
  * 
  * You can optionally pass JSON data from parse.com which will
  * be avaialable in the onReceive() method here.
