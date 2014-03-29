@@ -18,7 +18,7 @@
 
     <application
         android:allowBackup="true"
-        android:name=".MyApplication"
+        android:name="com.makemyandroidapp.parsenotificationexample.ParseApplication"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
