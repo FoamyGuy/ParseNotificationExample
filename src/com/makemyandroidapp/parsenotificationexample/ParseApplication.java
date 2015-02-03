@@ -12,7 +12,8 @@ public class ParseApplication extends Application {
 		super.onCreate();
 		Parse.initialize(this, Keys.applicationId, Keys.clientKey);
 		PushService.setDefaultPushCallback(this, MainActivity.class);
-		ParseInstallation.getCurrentInstallation().saveInBackground();
+		//ParseInstallation.getCurrentInstallation().saveInBackground();
+		ParseInstallation.getCurrentInstallation().saveEventually();
 	}
 
 }
